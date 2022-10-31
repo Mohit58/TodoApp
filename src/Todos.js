@@ -1,6 +1,6 @@
 import React from 'react';
 
-var styleClose = {
+let styleClose = {
     cursor : 'pointer'
 }
 const Todos = ({todos, deleteTodo}) => {

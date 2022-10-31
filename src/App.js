@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   deleteTodo = (id) => {
-    console.log(id);
     const todos = this.state.todos.filter( todo => {
       return todo.id !== id
     });
@@ -25,7 +24,7 @@ class App extends Component {
 
   addTodo = (todo) => {
     todo.id = Math.random();
-    let todos = [...this.state.todos, todo];
+    let todos = [todo, ...this.state.todos];
     this.setState({
       todos : todos
     })
